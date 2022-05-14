@@ -5,7 +5,7 @@ const notesUtils = require('./notes.js');
 
 yargs.command({
     command: 'add',
-    describe: 'Cmd to add a new note',
+    describe: 'Command to add a new note',
     builder: {
         title: {
             describe: 'Title of the note',
@@ -25,7 +25,7 @@ yargs.command({
 
 yargs.command({
     command: 'remove',
-    describe: 'Cmd to remove a note',
+    describe: 'Command to remove a note',
     builder: {
         title: {
             describe: 'Title of the note to be removed',
@@ -39,14 +39,14 @@ yargs.command({
 });
 yargs.command({
     command: 'list',
-    describe: 'Cmd to list out all the notes',
+    describe: 'Command to list out all the notes',
     handler() {
         notesUtils.listNotes()
     }
 });
 yargs.command({
     command: 'read',
-    describe: 'Cmd to read a note',
+    describe: 'Command to read a note',
     builder: {
         title: {
             describe: 'Title of the note to be read',
